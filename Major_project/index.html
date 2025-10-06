@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h3 class="text-center mb-4">Form Validation</h3>
+    <form id="myForm">
+      <div class="mb-3 position-relative">
+        <label>Full Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter full name">
+        <i class="fa-solid fa-user icon"></i>
+        <small id="nameError" class="error"></small>
+      </div>
+
+      <div class="mb-3 position-relative">
+        <label>Email</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter email">
+        <i class="fa-solid fa-envelope icon"></i>
+        <small id="emailError" class="error"></small>
+      </div>
+
+      <div class="mb-3 position-relative">
+        <label>Phone Number</label>
+        <input type="text" id="phone" class="form-control" placeholder="Enter 10-digit phone number">
+        <i class="fa-solid fa-phone icon"></i>
+        <small id="phoneError" class="error"></small>
+      </div>
+
+      <div class="mb-3 position-relative">
+        <label>Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Enter password">
+        <i class="fa-solid fa-lock icon"></i>
+        <small id="passwordError" class="error"></small>
+      </div>
+
+      <div class="mb-3 position-relative">
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm password">
+        <i class="fa-solid fa-lock-open icon"></i>
+        <small id="confirmError" class="error"></small>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
